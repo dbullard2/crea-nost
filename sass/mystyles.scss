@@ -1,0 +1,97 @@
+@charset "utf-8";
+$black: #060606;
+$blue: #87f2ff;
+$pink: #ff87db;
+$yellow: #fffb87;
+$white: #f4f1de;
+$green: #93ff93;
+
+// Update Bulma's global variables
+
+// Update some of Bulma's component variables
+$body-background-color: $black;
+$navbar-item-img-max-height: 100000000px;
+$navbar-height: 8rem;
+$navbar-background-color: transparent;
+$navbar-item-color: $white;
+$navbar-item-hover-background-color: transparent;
+$body-family: 'Roboto', sans-serif;
+$title-color: $white;
+
+//custom css
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+@font-face {
+  font-family: 'noway';
+  src: url('../fonts/nowayround-regular-webfont.ttf');
+}
+
+* {
+  color: $white;
+}
+
+.one h1 {
+  color: $white;
+  font-size: 3.5rem !important;
+  font-family: noway;
+}
+
+.one-big {
+  max-width: 551px;
+}
+
+.navbar-item img {
+  width: auto;
+  height: 8rem;
+}
+
+.logo-text {
+  font-family: noway;
+  font-size: 3rem;
+}
+
+.end {
+  font-weight: bold;
+}
+
+.space {
+  width: 5rem;
+  height: 5px;
+}
+
+.active {
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-decoration-color: $blue;
+  text-underline-offset: 0.5rem;
+}
+
+.active:hover {
+  color: $white !important;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.one {
+  height: 50vh;
+}
+
+.one-big button {
+  background-color: $green;
+  border-color: $green;
+  margin-top: 2vh;
+  //width: 7rem !important;
+}
+
+// Import only what you need from Bulma
+@import '../node_modules/bulma/sass/utilities/_all.sass';
+@import '../node_modules/bulma/sass/base/_all.sass';
+@import '../node_modules/bulma/sass/elements/button.sass';
+@import '../node_modules/bulma/sass/elements/container.sass';
+@import '../node_modules/bulma/sass/elements/title.sass';
+@import '../node_modules/bulma/sass/form/_all.sass';
+@import '../node_modules/bulma/sass/components/navbar.sass';
+@import '../node_modules/bulma/sass/layout/hero.sass';
+@import '../node_modules/bulma/sass/layout/section.sass';

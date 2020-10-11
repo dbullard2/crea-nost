@@ -1,0 +1,3 @@
+ideas - add wind effect to section one
+
+todo - clean up code
