@@ -76,6 +76,8 @@ $title-color: $white;
 
 .one {
   height: 50vh;
+  display: flex;
+  justify-content: space-between;
 }
 
 .one-big button {
@@ -85,13 +87,68 @@ $title-color: $white;
   //width: 7rem !important;
 }
 
-// Import only what you need from Bulma
-@import '../node_modules/bulma/sass/utilities/_all.sass';
-@import '../node_modules/bulma/sass/base/_all.sass';
-@import '../node_modules/bulma/sass/elements/button.sass';
-@import '../node_modules/bulma/sass/elements/container.sass';
-@import '../node_modules/bulma/sass/elements/title.sass';
-@import '../node_modules/bulma/sass/form/_all.sass';
-@import '../node_modules/bulma/sass/components/navbar.sass';
-@import '../node_modules/bulma/sass/layout/hero.sass';
-@import '../node_modules/bulma/sass/layout/section.sass';
+.no {
+  font-family: noway;
+}
+
+.two {
+  display: flex;
+  //align-items: flex-end;
+}
+
+.two img {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.do {
+  width: 30%;
+}
+
+.do p {
+  max-width: 80%;
+}
+
+.three {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 1vw;
+  position: relative;
+  box-sizing: border-box;
+  padding: 2vw;
+
+  $border: 5px;
+  color: $white;
+  background: $black;
+  background-clip: padding-box;
+  border: solid $border transparent;
+  border-radius: 0.5em;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin: -$border;
+    border-radius: inherit;
+    background: linear-gradient(
+      148deg,
+      rgba(191, 147, 255, 1) 0%,
+      rgba(255, 147, 178, 1) 100%
+    );
+  }
+}
+
+.fa-check-circle {
+  margin-top: 0.3vw;
+  margin-right: 1vw;
+  float: left;
+  color: #dcf9ff;
+}
+
+@import '../node_modules/bulma/bulma.sass';

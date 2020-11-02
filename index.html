@@ -1,12 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <style>
+      .laptop,
+      .phone {
+        height: 30vw;
+        width: 30vw;
+      }
+    </style>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>crea nost</title>
     <link rel="stylesheet" href="css/mystyles.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.1/css/all.css" />
   </head>
+
   <body id="home">
     <nav class="navbar" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
@@ -53,13 +62,129 @@
           <h1 class="is-size-1 bold">Web Design & Development for your business</h1>
           <p>
             No page builders or WordPress. We offer 100% hand crafted websites starting at just
-            $150 a month.
+            $200 a month.
           </p>
           <button class="button">Get In Touch</button>
+        </div>
+        <div class="phone"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <p class="is-size-1 bold no has-text-centered">
+        What We <span style="color: #bf93ff">Do</span>
+      </p>
+      <div class="container two">
+        <div class="do">
+          <img src="img/phoneIcon.png" alt="" class="image" />
+          <br />
+          <p class="has-text-weight-bold has-text-centered is-size-5">Mobile-First Design</p>
+          <p class="has-text-centered">
+            We build your site for mobile first, and add to it for tablets and desktop.
+          </p>
+        </div>
+        <div class="do">
+          <img src="img/laptopIcon.png" alt="" class="image" />
+          <br />
+          <p class="has-text-weight-bold has-text-centered is-size-5">Fully Responsive</p>
+          <p class="has-text-centered">
+            Your sites will work on all screen sizes: mobile, tablets, desktopp, and anything
+            in-between. Your site will be accessible any time, anywhere.
+          </p>
+        </div>
+        <div class="do">
+          <img src="img/uiIcon.png" alt="" class="image" />
+          <br />
+          <p class="has-text-weight-bold has-text-centered is-size-5">Optimisation</p>
+          <p class="has-text-centered">
+            No matter what browser your client is using, we'll optimise your site to work on
+            it.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container three">
+        <div class="check">
+          <i class="fas fa-check-circle is-size-5"></i>
+          <p class="has-text-weight-bold is-size-5">Hosting Fees Included</p>
+
+          <p>Hosting fees are included in the monthly payment.</p>
+        </div>
+        <div class="check">
+          <i class="fas fa-check-circle"></i>
+          <p class="has-text-weight-bold is-size-5">Unlimited Edits</p>
+          <p>Change anything you want, anytime, and I'll get it done as soon as possible</p>
+        </div>
+        <div class="check">
+          <i class="fas fa-check-circle"></i>
+          <p class="has-text-weight-bold is-size-5">24/7 Support</p>
+          <p>Call me anytime, day or night with no automated responses.</p>
+        </div>
+        <div class="check">
+          <i class="fas fa-check-circle"></i>
+          <p class="has-text-weight-bold is-size-5">Web Design & Development</p>
+          <p>
+            As many hours of design & development as you need to get your site looking just the
+            way you want it.
+          </p>
         </div>
       </div>
     </section>
 
     <script src="js/script.js"></script>
+    <script src="deviceful.min.js"></script>
+    <script>
+      var x = 0;
+      var m = 0;
+      // Check out deviceful.app for full documentation
+
+      /**
+       * Laptop Example
+       */
+
+      var laptop = new Deviceful({
+        parent: '.laptop',
+        device: 'laptop',
+        screenshot: 'img/laptop.png',
+      });
+
+      /**
+       * Phone Example
+       */
+
+      var phoneLoadAnim = [
+        {
+          object: 'model',
+          move: 'rotation',
+          axis: 'y',
+          to: -395,
+          duration: 2000,
+          //delay: 1000,
+        },
+      ];
+
+      var phone = new Deviceful({
+        parent: '.phone',
+        device: 'phone',
+        screenshot: 'img/phone.png',
+
+        cameraDistance: 22,
+        onLoadAnimation: phoneLoadAnim,
+      });
+
+      // Mount your Deviceful instances to start them
+      phone.mount();
+      laptop.mount();
+
+      window.addEventListener('mousemove', (e) => {
+        if (e.pageX < m) {
+          phone.swivel({ to: -30, compound: true, duration: 100 });
+        } else {
+          phone.swivel({ to: 30, compound: true, duration: 100 });
+        }
+        m = e.pageX;
+      });
+    </script>
   </body>
 </html>
