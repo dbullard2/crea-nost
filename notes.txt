@@ -1,3 +1,2 @@
-ideas - add wind effect to section one
-
-todo - clean up code
+tiers: 
+        - standard: $200 a month, unlimited edits, includes hosting, 24/7 customer service, 

@@ -151,4 +151,36 @@ $title-color: $white;
   color: #dcf9ff;
 }
 
+.item {
+  background-color: #272933;
+  margin-top: 2vw;
+  width: 25%;
+  height: 100%;
+  border-radius: 0.5em;
+  border: 3px solid #dcf9ff;
+}
+
+.portfolio {
+  display: flex;
+  justify-content: space-between;
+  height: 35vh;
+}
+
+.item img {
+  width: 80%;
+  margin: 0 auto;
+  display: block;
+  margin-top: 10%;
+}
+
+.info {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.ive {
+  width: 60vw;
+  margin: 0 auto;
+}
+
 @import '../node_modules/bulma/bulma.sass';
