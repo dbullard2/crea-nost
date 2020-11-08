@@ -1,0 +1,361 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+//colours
+$black: #060606;
+$red: #e3001b;
+
+//changing bulma variables
+$body-family: 'Roboto', sans-serif;
+
+$navbar-background-color: $black;
+$navbar-item-color: #fff;
+$navbar-item-hover-color: $red;
+$navbar-item-hover-background-color: transparent;
+$navbar-item-img-max-height: 100000000px;
+
+$input-background-color: transparent;
+$input-color: #fff !important;
+
+$footer-background-color: $black;
+$footer-color: #fff;
+
+.section-one {
+  background-color: $black;
+  height: 30vh;
+  color: #fff;
+  padding-top: 3vh;
+}
+
+.container-one {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.big {
+  font-size: 3rem;
+}
+
+.right {
+  height: 100%;
+}
+
+.right img {
+  height: 130%;
+  width: 130%;
+}
+
+.smol {
+  //font-size: 1.25rem;
+  max-width: 600px;
+}
+
+.mobile-space {
+  background: $black;
+  width: 100%;
+  height: 100px;
+}
+
+.red-button {
+  background-color: $red !important;
+  border: $red !important;
+  color: #fff !important;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.red-button:hover {
+  background-color: #fff !important;
+  color: #000 !important;
+}
+
+.container-two span {
+  color: $red;
+}
+
+.menu {
+  display: flex;
+  width: 100%;
+}
+
+.menu-item {
+  width: 30%;
+  margin-right: 3%;
+  //background-color: $red;
+}
+
+.menu-item:hover {
+  border: 4px solid $red;
+  border-radius: 5px;
+}
+
+.container-two button {
+  margin: 0 auto;
+  display: block;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.container-two button:hover,
+.container-four button:hover {
+  background-color: $red !important;
+}
+
+.section-two {
+  border-bottom: 3px dotted $red;
+  margin-bottom: 2rem;
+}
+
+.container-three h1 {
+  color: $red;
+}
+
+.review {
+  width: 30%;
+  background-color: #f9f9f9;
+  border: 3px solid #000;
+  border-radius: 5px;
+}
+
+.review-inner {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.review figure {
+  margin-bottom: 0.5vh;
+}
+
+.red {
+  color: $red;
+}
+
+.review-text {
+  //background-color: #ffd3d3;
+  border-radius: 5px;
+  margin-bottom: 1vh;
+  font-weight: bold;
+}
+
+.reviews,
+.mobile-reviews {
+  display: flex;
+}
+
+.mobile-reviews {
+  justify-content: space-between;
+}
+
+.mobile-reviews .review {
+  width: 45%;
+}
+
+.margin-right {
+  margin-right: 3%;
+}
+
+.section-three svg {
+  margin-top: 2vh;
+}
+
+.container-four img {
+  width: 100%;
+}
+
+.container-four {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1vh !important;
+}
+
+.container-four .right {
+  width: 50%;
+  margin-left: 2vw;
+}
+
+.container-four .left {
+  width: 50%;
+}
+
+.section-five {
+  padding-top: 2vh;
+  background-color: $black;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+
+.container-five {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 2vh;
+}
+
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
+
+.circle {
+  width: 3vh;
+  height: 3vh;
+  background-color: $red;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1vw;
+}
+
+.section-five .right-m {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.centre {
+  text-align: center;
+  margin-bottom: 2vh;
+}
+
+.fin {
+  background-color: $black;
+  color: #fff;
+  padding-top: 2vh;
+  display: flex;
+}
+
+.fin .container {
+  display: flex;
+}
+
+.fin-col {
+  width: 33.33%;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.fin a {
+  color: #fff;
+}
+
+.fin a:hover {
+  color: #fff;
+  text-decoration: underline;
+  text-decoration-color: $red;
+  text-decoration-thickness: 2px;
+}
+
+.fin-col i {
+  margin-right: 3%;
+  width: 30%;
+  margin: 0 auto;
+  margin-top: 1vh;
+}
+
+.social {
+  display: flex;
+}
+
+.plug {
+  background-color: $black;
+  color: #fff;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.plug a:hover {
+  text-decoration: underline;
+  text-decoration-color: #93ff93;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 0.5rem;
+}
+
+.active {
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-decoration-color: $red;
+  text-underline-offset: 0.5rem;
+}
+
+.active:hover {
+  color: #fff !important;
+}
+
+.blurb {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.about-us {
+  display: flex;
+}
+
+.about-us img {
+  width: 40%;
+}
+
+.one {
+  display: flex;
+}
+
+.story {
+  margin-left: 5vw;
+  width: 34%;
+}
+
+.team {
+  display: flex;
+  width: 100%;
+}
+
+.member {
+  width: 30%;
+  margin-right: 3%;
+}
+
+.mtop-5 {
+  margin-top: 5vh;
+}
+
+.contah {
+  position: relative;
+  height: 50vh;
+  z-index: 0;
+}
+
+.bottom {
+  position: absolute;
+  z-index: 1;
+  background-color: $red;
+  width: 60%;
+  height: 100%;
+  border-radius: 30px;
+}
+
+.topp {
+  position: absolute;
+  z-index: 2;
+  background-color: $black;
+  width: 45%;
+  height: 45vh;
+  top: 2.4vh;
+  left: 30vw;
+  border-radius: 30px;
+  color: #fff;
+}
+
+.topp div {
+  width: 90%;
+  margin: 0 auto;
+}
+
+@import '../node_modules/bulma/bulma.sass';
