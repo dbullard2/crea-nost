@@ -11,9 +11,18 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="msapplication-config" content="img/favicon/browserconfig.xml" />
+    <meta name="theme-color" content="#ffffff" />
     <title>crea nost</title>
     <link rel="stylesheet" href="css/mystyles.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.1/css/all.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="img/favicon/site.webmanifest" />
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" />
   </head>
 
   <body id="home">
@@ -269,6 +278,47 @@
           for just $200 a month. Interested? Let's talk.
         </p>
       </div>
+
+      <form
+        name="contact"
+        method="POST"
+        data-netlify-recaptcha="true"
+        data-netlify="true"
+        class="contact mt-6"
+      >
+        <p>
+          <label class="has-text-weight-bold is-size-4-tablet"
+            >Name: <input type="text" name="name" class="input"
+          /></label>
+        </p>
+        <br />
+        <p>
+          <label class="has-text-weight-bold is-size-4-tablet"
+            >Business Name: <input type="text" name="business" class="input"
+          /></label>
+        </p>
+        <br />
+        <p>
+          <label class="has-text-weight-bold is-size-4-tablet"
+            >Email Address: <input type="email" name="email" class="input"
+          /></label>
+        </p>
+        <br />
+        <p>
+          <label class="has-text-weight-bold is-size-4-tablet"
+            >Phone Number: <input type="tel" name="number" class="input"
+          /></label>
+        </p>
+        <br />
+        <p>
+          <label class="has-text-weight-bold is-size-4-tablet"
+            >Leave A Message: <textarea name="message" class="textarea"></textarea>
+          </label>
+        </p>
+        <br />
+        <div data-netlify-recaptcha="true"></div>
+        <button type="submit" class="button has-text-weight-bold">Submit</button>
+      </form>
     </section>
 
     <script src="js/script.js"></script>

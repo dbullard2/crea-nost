@@ -1,4 +1,6 @@
 @charset "utf-8";
+
+//colours
 $black: #060606;
 $blue: #87f2ff;
 $pink: #ff87db;
@@ -6,9 +8,7 @@ $yellow: #fffb87;
 $white: #f4f1de;
 $green: #93ff93;
 
-// Update Bulma's global variables
-
-// Update some of Bulma's component variables
+// bulma variables
 $body-background-color: $black;
 $navbar-item-img-max-height: 100000000px;
 $navbar-height: 8rem;
@@ -17,6 +17,8 @@ $navbar-item-color: $white;
 $navbar-item-hover-background-color: transparent;
 $body-family: 'Roboto', sans-serif;
 $title-color: $white;
+$input-background-color: #272933;
+$input-color: $white;
 
 //custom css
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
@@ -124,12 +126,10 @@ body {
   position: relative;
   box-sizing: border-box;
   padding: 2vw;
-
-  $border: 5px;
   color: $white;
   background: $black;
   background-clip: padding-box;
-  border: solid $border transparent;
+  border: solid 5px transparent;
   border-radius: 0.5em;
 
   &:before {
@@ -140,7 +140,7 @@ body {
     bottom: 0;
     left: 0;
     z-index: -1;
-    margin: -$border;
+    margin: -5px;
     border-radius: inherit;
     background: linear-gradient(
       148deg,
@@ -218,6 +218,39 @@ body {
 .infom {
   width: 70%;
   margin: 0 auto;
+}
+
+/*.contact {
+  width: 70vw;
+  margin: 0 auto;
+  
+}*/
+
+.contact {
+  position: relative;
+  color: $white;
+  background: $black;
+  background-clip: padding-box;
+  border: solid 5px transparent;
+  border-radius: 0.5em;
+  padding: 2vw;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin: -5px;
+    border-radius: inherit;
+    background: linear-gradient(
+      148deg,
+      rgba(147, 255, 147, 1) 0%,
+      rgba(255, 234, 147, 1) 100%
+    );
+  }
 }
 
 @import '../node_modules/bulma/bulma.sass';
