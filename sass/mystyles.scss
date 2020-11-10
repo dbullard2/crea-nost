@@ -30,9 +30,15 @@ $title-color: $white;
   color: $white;
 }
 
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 .one h1 {
   color: $white;
-  font-size: 3.5rem !important;
+  //font-size: 3.5rem !important;
   font-family: noway;
 }
 
@@ -180,6 +186,38 @@ $title-color: $white;
 
 .five p {
   color: $white;
+}
+
+.center {
+  margin: 0 auto;
+  display: block;
+}
+
+.dom {
+  max-width: 70%;
+}
+
+.dom img {
+  height: 40vw;
+  margin: 0 auto;
+}
+
+.itemm {
+  background-color: #272933;
+  border-radius: 0.5em;
+  border: 3px solid #dcf9ff;
+}
+
+.itemm img {
+  width: 70%;
+  margin: 0 auto;
+  display: block;
+  margin-top: 5vw;
+}
+
+.infom {
+  width: 70%;
+  margin: 0 auto;
 }
 
 @import '../node_modules/bulma/bulma.sass';
