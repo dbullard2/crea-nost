@@ -26,9 +26,11 @@
         <a
           role="button"
           class="navbar-burger burger"
+          id="burger"
           aria-label="menu"
           aria-expanded="false"
           data-target="navbarBasicExample"
+          onclick="burger()"
         >
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
@@ -47,10 +49,9 @@
 
         <div class="navbar-end">
           <a class="navbar-item end home" href="index.html"> Home </a>
-          <a class="navbar-item end" href="about.html"> About </a>
-          <a class="navbar-item end" href="services.html"> Services </a>
-          <a class="navbar-item end" href="portfolio.html"> Portfolio </a>
-          <a class="navbar-item end" href="contact.html"> Contact </a>
+          <a class="navbar-item end" href="index.html#services"> Services </a>
+          <a class="navbar-item end" href="index.html#portfolio"> Portfolio </a>
+          <a class="navbar-item end" href="index.html#contact"> Contact </a>
           <div class="space"></div>
         </div>
       </div>
@@ -138,7 +139,7 @@
         </div>
       </div>
     </section>
-    <section class="section">
+    <section class="section" id="services">
       <div class="container three">
         <div class="check">
           <i class="fas fa-check-circle is-size-5"></i>
@@ -166,7 +167,7 @@
         </div>
       </div>
     </section>
-    <section class="section">
+    <section class="section" id="portfolio">
       <div class="container four">
         <p class="is-size-1-tablet is-size-2-mobile bold no has-text-centered">
           Our <span style="color: #ffeb93">Portfolio</span>
@@ -258,7 +259,7 @@
         </div>
       </div>
     </section>
-    <section class="section">
+    <section class="section" id="contact">
       <div class="container five">
         <p class="is-size-1 has-text-centered has-text-weight-bold title">
           Starting at just $200 a month
