@@ -1,10 +1,3 @@
-var page = document.body.id;
-var home = document.getElementsByClassName('home')[0];
-
-if (page == 'home') {
-  home.classList.add('active');
-}
-
 document.addEventListener('DOMContentLoaded', () => {
   let navbarBurger = document.querySelector('.navbar-burger');
   let navbarMenu = document.querySelector('.navbar-menu');
