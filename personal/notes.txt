@@ -1,1 +1,2 @@
-#a7fffd as a variable, compress images
+#a7fffd as a variable, 
+

@@ -84,13 +84,10 @@ body {
   text-underline-offset: 0.5vw;
   text-decoration-color: #a7fffd; }
 
-.about-inner {
-  display: flex; }
-
+/*.about-inner {
+  display: flex;
+}*/
 .collage {
-  display: inline-grid;
-  grid-template-columns: repeat(2, [col-start] 1fr);
-  grid-gap: 0px;
   width: 40vw; }
 
 .bio {
