@@ -22,7 +22,7 @@ $footer-color: #fff;
 
 .section-one {
   background-color: $black;
-  height: 30vh;
+  height: 35vh;
   color: #fff;
   padding-top: 3vh;
 }
@@ -300,7 +300,9 @@ $footer-color: #fff;
 }
 
 .about-us img {
-  width: 40%;
+  max-width: 40vw;
+  flex-grow: 0;
+  flex-shrink: 0;
 }
 
 .one {
@@ -309,7 +311,7 @@ $footer-color: #fff;
 
 .story {
   margin-left: 5vw;
-  width: 34%;
+  //width: 34%;
 }
 
 .team {
@@ -356,6 +358,15 @@ $footer-color: #fff;
 .topp div {
   width: 90%;
   margin: 0 auto;
+}
+
+.mobile-form {
+  width: 80vw;
+  padding: 8vw;
+  background-color: $black;
+  margin: 0 auto;
+  border-radius: 0.5em;
+  color: #fff;
 }
 
 @import '../node_modules/bulma/bulma.sass';

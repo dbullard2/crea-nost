@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 .section-one {
   background-color: #060606;
-  height: 30vh;
+  height: 35vh;
   color: #fff;
   padding-top: 3vh; }
 
@@ -225,14 +225,15 @@
   display: flex; }
 
 .about-us img {
-  width: 40%; }
+  max-width: 40vw;
+  flex-grow: 0;
+  flex-shrink: 0; }
 
 .one {
   display: flex; }
 
 .story {
-  margin-left: 5vw;
-  width: 34%; }
+  margin-left: 5vw; }
 
 .team {
   display: flex;
@@ -272,6 +273,14 @@
 .topp div {
   width: 90%;
   margin: 0 auto; }
+
+.mobile-form {
+  width: 80vw;
+  padding: 8vw;
+  background-color: #060606;
+  margin: 0 auto;
+  border-radius: 0.5em;
+  color: #fff; }
 
 /*! bulma.io v0.9.1 | MIT License | github.com/jgthms/bulma */
 /* Bulma Utilities */
