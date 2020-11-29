@@ -56,3 +56,17 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
+function scroller(e) {
+  e = e.replace(/\s+/g, '');
+  e = e.toLowerCase();
+  document.getElementById(e).scrollIntoView({
+    behavior: 'smooth',
+  });
+}
+
+function scrollHome() {
+  document.getElementById('home').scrollIntoView({
+    behavior: 'smooth',
+  });
+}

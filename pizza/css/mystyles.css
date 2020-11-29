@@ -1,14 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 .section-one {
   background-color: #060606;
-  height: 35vh;
-  color: #fff;
-  padding-top: 3vh; }
-
-.container-one {
-  display: flex;
-  justify-content: space-between;
-  height: 100%; }
+  color: #fff; }
 
 .big {
   font-size: 3rem; }
@@ -281,6 +274,10 @@
   margin: 0 auto;
   border-radius: 0.5em;
   color: #fff; }
+
+.touch input,
+.touch textarea {
+  border: 0.15em solid #fff; }
 
 /*! bulma.io v0.9.1 | MIT License | github.com/jgthms/bulma */
 /* Bulma Utilities */

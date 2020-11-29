@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html id="home" lang="en">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -11,7 +11,7 @@
   <body>
     <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
-        <a class="navbar-item logo" href="index.html"> TYLER </a>
+        <a class="navbar-item logo" onclick="scrollHome()"> TYLER </a>
 
         <a
           role="button"
@@ -30,10 +30,27 @@
         <div class="navbar-start"></div>
 
         <div class="navbar-end">
-          <a href="index.html" class="navbar-item has-text-weight-bold is-size-5"> Home </a>
-          <a href="index.html" class="navbar-item has-text-weight-bold is-size-5"> Work </a>
-          <a href="index.html" class="navbar-item has-text-weight-bold is-size-5"> About </a>
-          <a href="index.html" class="navbar-item has-text-weight-bold is-size-5"> Contact </a>
+          <a onclick="scrollHome()" class="navbar-item has-text-weight-bold is-size-5">
+            Home
+          </a>
+          <a
+            onclick="scroller(this.innerHTML)"
+            class="navbar-item has-text-weight-bold is-size-5"
+          >
+            Work
+          </a>
+          <a
+            onclick="scroller(this.innerHTML)"
+            class="navbar-item has-text-weight-bold is-size-5"
+          >
+            About
+          </a>
+          <a
+            onclick="scroller(this.innerHTML)"
+            class="navbar-item has-text-weight-bold is-size-5"
+          >
+            Contact
+          </a>
         </div>
       </div>
     </nav>
@@ -64,7 +81,7 @@
             to views on love, sexuality, existence and nostalgia.
           </p>
           <br />
-          <a href="about.html" class="more underline is-size-5">Find Out More</a>
+          <a onclick="scroller('about')" class="more underline is-size-5">Find Out More</a>
         </div>
       </div>
       <div class="container mobile-c-one is-hidden-tablet">
@@ -93,12 +110,12 @@
           His lyrical themes have also evolved from horrorcore-esque subjects to views on love,
           sexuality, existence and nostalgia.
         </p>
-        <a href="about.html" class="more-mobile is-size-5">Find Out More</a>
+        <a onclick="scroller('about')" class="more-mobile is-size-5">Find Out More</a>
       </div>
     </section>
-    <section class="section two">
+    <section class="section two" id="about">
       <div class="container c-two">
-        <p class="is-size-4 underline">About</p>
+        <p class="is-size-3 has-text-weight-bold">About</p>
         <br />
         <div class="about-inner is-flex-tablet">
           <div class="collage right-3">
@@ -142,9 +159,9 @@
         </div>
       </div>
     </section>
-    <section class="section three">
+    <section class="section three" id="work">
       <div class="container c-three">
-        <p class="is-size-4 underline">Latest Projects</p>
+        <p class="is-size-3 has-text-weight-bold">Latest Projects</p>
         <br />
         <div class="works is-hidden-mobile">
           <div class="work right-3 bottom-3">
@@ -252,9 +269,9 @@
         </div>
       </div>
     </section>
-    <section class="section">
+    <section class="section" id="contact">
       <div class="container c-four">
-        <div class="is-size-2 underline">Get in touch</div>
+        <div class="is-size-2 has-text-weight-bold">Get in touch</div>
         <br />
         <div>
           <p class="is-size-5 mb-3">Have an interesting project? Let's talk.</p>

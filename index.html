@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="has-navbar-fixed-top" id="home" lang="en">
   <head>
     <style>
       .laptop,
@@ -25,8 +25,8 @@
     <link rel="shortcut icon" href="img/favicon/favicon.ico" />
   </head>
 
-  <body id="home">
-    <nav class="navbar" role="navigation" aria-label="main navigation">
+  <body>
+    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
         <a class="navbar-item" href="index.html">
           <img src="img/logo.png" class="nav-logo" />
@@ -57,10 +57,14 @@
         </div>
 
         <div class="navbar-end">
-          <a class="navbar-item end home" href="index.html"> Home </a>
-          <a class="navbar-item end" href="index.html#services"> Services </a>
-          <a class="navbar-item end" href="index.html#portfolio"> Portfolio </a>
-          <a class="navbar-item end" href="index.html#contact"> Contact </a>
+          <a class="navbar-item end home is-size-5" onclick="scrollHome()"> Home </a>
+          <a class="navbar-item end is-size-5" onclick="scroller(this.innerHTML)">
+            Services
+          </a>
+          <a class="navbar-item end is-size-5" onclick="scroller(this.innerHTML)">
+            Portfolio
+          </a>
+          <a class="navbar-item end is-size-5" onclick="scroller(this.innerHTML)"> Contact </a>
           <div class="space"></div>
         </div>
       </div>
@@ -76,7 +80,9 @@
             No page builders or WordPress. We offer 100% hand crafted websites starting at just
             $200 a month.
           </p>
-          <button class="button has-text-weight-bold">Get In Touch</button>
+          <button class="button has-text-weight-bold" onclick="scroller('contact')">
+            Get In Touch
+          </button>
         </div>
         <div class="phone is-hidden-mobile"></div>
       </div>
@@ -86,6 +92,7 @@
       <p class="is-size-1-tablet is-size-2-mobile bold no has-text-centered">
         What We <span style="color: #bf93ff">Do</span>
       </p>
+      <br />
       <div class="container is-hidden-tablet">
         <br />
         <div class="center dom">
@@ -93,7 +100,7 @@
           <br />
           <p class="has-text-weight-bold has-text-centered is-size-5">Mobile-First Design</p>
           <p class="has-text-centered">
-            We build your site for mobile first, and add to it for tablets and desktop.
+            We build your site for mobile first to ensure a seamless experience on any device.
           </p>
         </div>
         <br />
@@ -125,7 +132,7 @@
           <br />
           <p class="has-text-weight-bold has-text-centered is-size-5">Mobile-First Design</p>
           <p class="has-text-centered">
-            We build your site for mobile first, and add to it for tablets and desktop.
+            We build your site for mobile first to ensure a seamless experience on any device.
           </p>
         </div>
         <div class="do">
@@ -188,9 +195,12 @@
               <p class="is-size-5 bold mt-3">Pizza Planet</p>
               <p class="mt-1">
                 Pizza Planet is a fictional pizza restaurant in Oakland California. The site
-                was created to showcase my abilites.
+                was created to showcase our abilites.
               </p>
-              <a href="pizza/index.html" target="_blank" class="button is-black mt-3 mb-3"
+              <a
+                href="pizza/index.html"
+                target="_blank"
+                class="button is-black mt-3 mb-3 has-text-weight-bold"
                 >View Site</a
               >
             </div>
@@ -201,9 +211,12 @@
               <p class="is-size-5 bold mt-3">Pool Party</p>
               <p class="mt-1">
                 Pool Party is a fictional pool supply company. The site was created to showcase
-                my abilites.
+                our abilites.
               </p>
-              <a href="pool/index.html" target="_blank" class="button is-black mt-3 mb-3"
+              <a
+                href="pool/index.html"
+                target="_blank"
+                class="button is-black mt-3 mb-3 has-text-weight-bold"
                 >View Site</a
               >
             </div>
@@ -215,7 +228,10 @@
               <p class="mt-1">
                 This is the perfect template for building your own personal / portfolio site.
               </p>
-              <a href="personal/index.html" target="_blank" class="button is-black mt-3 mb-3"
+              <a
+                href="personal/index.html"
+                target="_blank"
+                class="button is-black mt-3 mb-3 has-text-weight-bold"
                 >View Site</a
               >
             </div>
@@ -230,10 +246,13 @@
               <br />
               <p>
                 Pizza Planet is a fictional pizza restaurant. The site was created to showcase
-                my abilites.
+                our abilites.
               </p>
               <br />
-              <a href="pizza/index.html" target="_blank" class="button is-black mb-4"
+              <a
+                href="pizza/index.html"
+                target="_blank"
+                class="button is-black mb-4 has-text-weight-bold"
                 >View Site</a
               >
             </div>
@@ -246,10 +265,15 @@
               <br />
               <p>
                 Pool Party is a fictional pool supply company. The site was created to showcase
-                my abilites.
+                our abilites.
               </p>
               <br />
-              <a href="pool/index.html" target="_blank" class="button is-black">View Site</a>
+              <a
+                href="pool/index.html"
+                target="_blank"
+                class="button is-black has-text-weight-bold"
+                >View Site</a
+              >
             </div>
           </div>
           <div class="item">
@@ -262,7 +286,10 @@
                 This is the perfect template for building your own personal / portfolio site.
               </p>
               <br />
-              <a href="personal/index.html" target="_blank" class="button is-black"
+              <a
+                href="personal/index.html"
+                target="_blank"
+                class="button is-black has-text-weight-bold"
                 >View Site</a
               >
             </div>
@@ -320,7 +347,13 @@
         <br />
         <div data-netlify-recaptcha="true"></div>
         <br />
-        <button type="submit" class="button has-text-weight-bold">Submit</button>
+        <button
+          type="submit"
+          class="button has-text-weight-bold"
+          style="display: block; margin: 0 auto"
+        >
+          Submit
+        </button>
       </form>
     </section>
 

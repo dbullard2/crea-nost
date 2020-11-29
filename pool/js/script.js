@@ -10,6 +10,33 @@ if (sessionStorage.cart !== undefined) {
   cartItems = JSON.parse(sessionStorage.getItem('cart'));
 }
 
+document.addEventListener('click', function (e) {
+  e = e || window.event;
+  var target = e.target;
+  if (target.classList.contains('remove')) {
+    let removeItem = e.target.parentNode.parentNode
+      .querySelector('.front')
+      .querySelector('.cart-img').src;
+    for (h = 0; h < cartItems.length; h++) {
+      if (cartItems[h].image == removeItem) {
+        cartItems[h].price = cartItems[h].price.replace(/\$/g, '');
+        cartItems[h].price = parseFloat(cartItems[h].price);
+        totalF -= parseFloat(cartItems[h].price);
+        totalF = totalF.toFixed(2);
+        if (isNaN(totalF)) {
+          total.innerHTML = '$' + 0;
+        } else {
+          total.innerHTML = '$' + totalF;
+        }
+
+        cartItems.splice(h, 1);
+        sessionStorage.setItem('cart', JSON.stringify(cartItems));
+      }
+    }
+    target.parentNode.parentNode.remove();
+  }
+});
+
 if ((document.body.id = 'home')) {
   var hero = document.getElementById('hero');
   var images = ['hero1', 'hero2', 'hero3', 'hero4', 'hero5'];
@@ -23,6 +50,7 @@ document.addEventListener('click', function (e) {
   e = e || window.event;
   var target = e.target;
   if (target.classList.contains('remove')) {
+    console.log('remove');
     let removeItem = e.target.parentNode.parentNode
       .querySelector('.front')
       .querySelector('.cart-img').src;
@@ -86,6 +114,12 @@ function filterSelection(c) {
     category.innerHTML = 'Mens';
   } else if (c == 1) {
     category.innerHTML = 'Womens';
+  } else if (c == 2) {
+    category.innerHTML = 'Towels';
+  } else if (c == 3) {
+    category.innerHTML = 'Sunglasses';
+  } else if (c == 4) {
+    category.innerHTML = 'Sunscreen';
   }
 
   for (i = 0; i < x.length; i++) {

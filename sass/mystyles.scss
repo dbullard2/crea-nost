@@ -12,7 +12,7 @@ $green: #93ff93;
 $body-background-color: $black;
 $navbar-item-img-max-height: 100000000px;
 $navbar-height: 8rem;
-$navbar-background-color: transparent;
+$navbar-background-color: $black;
 $navbar-item-color: $white;
 $navbar-item-hover-background-color: transparent;
 $body-family: 'Roboto', sans-serif;
@@ -101,7 +101,7 @@ body {
 
 .two {
   display: flex;
-  //align-items: flex-end;
+  justify-content: center;
 }
 
 .two img {
@@ -111,6 +111,10 @@ body {
 
 .do {
   width: 30%;
+}
+
+.do img {
+  height: 13vw;
 }
 
 .do p {
@@ -249,6 +253,9 @@ body {
       rgba(255, 234, 147, 1) 100%
     );
   }
+
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 @import '../node_modules/bulma/bulma.sass';

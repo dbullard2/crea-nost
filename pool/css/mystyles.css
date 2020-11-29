@@ -215,6 +215,9 @@ aside {
 
 .shop-item button {
   margin-top: 0.5vh; }
+  @media only screen and (max-width: 768px) {
+    .shop-item button {
+      width: 25vw; } }
 
 .mode {
   background-color: #fff;

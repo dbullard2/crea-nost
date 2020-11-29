@@ -22,15 +22,7 @@ $footer-color: #fff;
 
 .section-one {
   background-color: $black;
-  height: 35vh;
   color: #fff;
-  padding-top: 3vh;
-}
-
-.container-one {
-  display: flex;
-  justify-content: space-between;
-  height: 100%;
 }
 
 .big {
@@ -367,6 +359,11 @@ $footer-color: #fff;
   margin: 0 auto;
   border-radius: 0.5em;
   color: #fff;
+}
+
+.touch input,
+.touch textarea {
+  border: 0.15em solid #fff;
 }
 
 @import '../node_modules/bulma/bulma.sass';
