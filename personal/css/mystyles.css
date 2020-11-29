@@ -121,6 +121,14 @@ button {
   text-decoration-thickness: 3px;
   text-underline-offset: 0.5rem; }
 
+.test {
+  background-image: url("../img/tyler1.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 50vh; }
+
 /*! bulma.io v0.9.1 | MIT License | github.com/jgthms/bulma */
 /* Bulma Utilities */
 @keyframes spinAround {
